@@ -20,7 +20,6 @@ function showPizzaPuppy() {
 function renderItem(str){
   fetch(`https://source.unsplash.com/1600x900/?${str}`).then((response)=> {
     document.getElementById('imageContainer').style.visibility = "visible";
-    console.log("here");
     document.getElementById('imageToShow').src = `${response.url}`;
   })
 }
